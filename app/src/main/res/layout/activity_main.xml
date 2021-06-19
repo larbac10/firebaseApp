@@ -7,12 +7,44 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/main_text_email"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/main_test_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="180dp" />
+
+    <Button
+        android:id="@+id/main_btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="32dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toTopOf="@+id/main_btn_storage"
+        app:layout_constraintTop_toBottomOf="@+id/main_test_user"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <TextView
+        android:id="@+id/main_test_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/main_btn_logout"
+        app:layout_constraintTop_toBottomOf="@+id/main_text_email"
+        tools:layout_editor_absoluteX="187dp" />
+
+    <Button
+        android:id="@+id/main_btn_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="STORAGE"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/main_btn_logout"
+        tools:layout_editor_absoluteX="162dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
